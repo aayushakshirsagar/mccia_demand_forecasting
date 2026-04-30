@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Sunrise CG — Monday Morning Reorder Report</title>
+<style>
+  body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+  h1 { color: #1a237e; } h2 { color: #283593; border-bottom: 2px solid #3949ab; }
+  table { border-collapse: collapse; width: 100%; background: white; margin-bottom: 20px; }
+  th { background: #3949ab; color: white; padding: 8px; }
+  td { padding: 8px; border: 1px solid #ddd; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .alert { background: #ffebee; padding: 10px; border-left: 4px solid #f44336; margin: 10px 0; }
+  .summary-box { background: white; padding: 15px; margin: 10px; display: inline-block; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 150px; text-align: center; }
+</style></head>
+<body>
+<h1>🌅 Sunrise Consumer Goods — Weekly Reorder Report</h1>
+<p><strong>Generated:</strong> Thursday, 30 April 2026 — 03:23 PM | <strong>Coverage:</strong> 6-Week Forward Forecast</p>
+
+<div>
+  <div class="summary-box"><h3>40</h3><p>SKUs to Order</p></div>
+  <div class="summary-box" style="border-left: 4px solid #f44336"><h3>31</h3><p>Stockout Risks</p></div>
+  <div class="summary-box" style="border-left: 4px solid #ff9800"><h3>0</h3><p>Overstock Risks</p></div>
+  <div class="summary-box" style="border-left: 4px solid #4caf50"><h3>₹107.4L</h3><p>Order Value</p></div>
+</div>
+
+<h2>🚨 Stockout Risk SKUs (Order Immediately)</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sku_id</th>
+      <th>product_name</th>
+      <th>available_stock</th>
+      <th>total_forecast_6wk</th>
+      <th>recommended_order_qty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SKU-001</td>
+      <td>Shampoo 200ml</td>
+      <td>0</td>
+      <td>2834.027990</td>
+      <td>3720</td>
+    </tr>
+    <tr>
+      <td>SKU-002</td>
+      <td>Shampoo 400ml</td>
+      <td>244</td>
+      <td>2244.372447</td>
+      <td>2646</td>
+    </tr>
+    <tr>
+      <td>SKU-003</td>
+      <td>Conditioner 200ml</td>
+      <td>210</td>
+      <td>2109.656746</td>
+      <td>2160</td>
+    </tr>
+    <tr>
+      <td>SKU-004</td>
+      <td>Body Wash 250ml</td>
+      <td>92</td>
+      <td>1826.484893</td>
+      <td>2448</td>
+    </tr>
+    <tr>
+      <td>SKU-005</td>
+      <td>Face Wash 100ml</td>
+      <td>368</td>
+      <td>2930.044629</td>
+      <td>3360</td>
+    </tr>
+    <tr>
+      <td>SKU-007</td>
+      <td>Sunscreen 50g</td>
+      <td>115</td>
+      <td>1067.510445</td>
+      <td>1176</td>
+    </tr>
+    <tr>
+      <td>SKU-008</td>
+      <td>Hair Oil 100ml</td>
+      <td>117</td>
+      <td>1882.729659</td>
+      <td>2376</td>
+    </tr>
+    <tr>
+      <td>SKU-010</td>
+      <td>Lip Balm 10g</td>
+      <td>242</td>
+      <td>1639.160083</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>SKU-011</td>
+      <td>Dish Wash 500ml</td>
+      <td>397</td>
+      <td>1857.226727</td>
+      <td>1872</td>
+    </tr>
+    <tr>
+      <td>SKU-012</td>
+      <td>Floor Cleaner 1L</td>
+      <td>0</td>
+      <td>2239.852852</td>
+      <td>3216</td>
+    </tr>
+    <tr>
+      <td>SKU-013</td>
+      <td>Toilet Cleaner 500ml</td>
+      <td>31</td>
+      <td>2319.955794</td>
+      <td>3168</td>
+    </tr>
+    <tr>
+      <td>SKU-014</td>
+      <td>Glass Cleaner 500ml</td>
+      <td>58</td>
+      <td>1568.718949</td>
+      <td>2082</td>
+    </tr>
+    <tr>
+      <td>SKU-015</td>
+      <td>Fabric Softener 1L</td>
+      <td>233</td>
+      <td>1570.814149</td>
+      <td>1848</td>
+    </tr>
+    <tr>
+      <td>SKU-016</td>
+      <td>Air Freshener 300ml</td>
+      <td>0</td>
+      <td>2658.623421</td>
+      <td>3924</td>
+    </tr>
+    <tr>
+      <td>SKU-017</td>
+      <td>Mosquito Repellent</td>
+      <td>177</td>
+      <td>2671.407242</td>
+      <td>2856</td>
+    </tr>
+    <tr>
+      <td>SKU-018</td>
+      <td>Dishwasher Tabs 20</td>
+      <td>120</td>
+      <td>3036.495734</td>
+      <td>4428</td>
+    </tr>
+    <tr>
+      <td>SKU-019</td>
+      <td>Laundry Bar 250g</td>
+      <td>289</td>
+      <td>1842.342768</td>
+      <td>2076</td>
+    </tr>
+    <tr>
+      <td>SKU-021</td>
+      <td>Biscuits 200g</td>
+      <td>102</td>
+      <td>1195.013254</td>
+      <td>1368</td>
+    </tr>
+    <tr>
+      <td>SKU-024</td>
+      <td>Instant Noodles</td>
+      <td>376</td>
+      <td>1086.363114</td>
+      <td>1104</td>
+    </tr>
+    <tr>
+      <td>SKU-025</td>
+      <td>Ketchup 500g</td>
+      <td>197</td>
+      <td>1463.106761</td>
+      <td>1668</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>📦 Full Reorder Recommendation</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sku_id</th>
+      <th>product_name</th>
+      <th>available_stock</th>
+      <th>total_forecast_6wk</th>
+      <th>safety_stock</th>
+      <th>recommended_order_qty</th>
+      <th>shelf_life_days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SKU-001</td>
+      <td>Shampoo 200ml</td>
+      <td>0</td>
+      <td>2834.027990</td>
+      <td>885.0</td>
+      <td>3720</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-018</td>
+      <td>Dishwasher Tabs 20</td>
+      <td>120</td>
+      <td>3036.495734</td>
+      <td>1510.0</td>
+      <td>4428</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-038</td>
+      <td>Oats 500g</td>
+      <td>251</td>
+      <td>2758.655169</td>
+      <td>915.0</td>
+      <td>3432</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-036</td>
+      <td>Soya Sauce 200ml</td>
+      <td>180</td>
+      <td>1029.108469</td>
+      <td>255.0</td>
+      <td>1116</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-034</td>
+      <td>Ghee 500g</td>
+      <td>226</td>
+      <td>3011.820664</td>
+      <td>869.0</td>
+      <td>3672</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-033</td>
+      <td>Cooking Oil 1L</td>
+      <td>0</td>
+      <td>623.086651</td>
+      <td>63.0</td>
+      <td>690</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-032</td>
+      <td>Dal 1kg</td>
+      <td>377</td>
+      <td>2927.992010</td>
+      <td>776.0</td>
+      <td>3330</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-031</td>
+      <td>Rice 5kg</td>
+      <td>321</td>
+      <td>1416.893813</td>
+      <td>373.0</td>
+      <td>1470</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-029</td>
+      <td>Tea 250g</td>
+      <td>254</td>
+      <td>1093.256093</td>
+      <td>453.0</td>
+      <td>1296</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-028</td>
+      <td>Coffee 200g</td>
+      <td>323</td>
+      <td>2654.552163</td>
+      <td>699.0</td>
+      <td>3036</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-027</td>
+      <td>Honey 500g</td>
+      <td>147</td>
+      <td>1774.007701</td>
+      <td>444.0</td>
+      <td>2112</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-026</td>
+      <td>Jam 500g</td>
+      <td>108</td>
+      <td>1077.032083</td>
+      <td>180.0</td>
+      <td>1152</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-025</td>
+      <td>Ketchup 500g</td>
+      <td>197</td>
+      <td>1463.106761</td>
+      <td>397.0</td>
+      <td>1668</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-024</td>
+      <td>Instant Noodles</td>
+      <td>376</td>
+      <td>1086.363114</td>
+      <td>385.0</td>
+      <td>1104</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-002</td>
+      <td>Shampoo 400ml</td>
+      <td>244</td>
+      <td>2244.372447</td>
+      <td>645.0</td>
+      <td>2646</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-019</td>
+      <td>Laundry Bar 250g</td>
+      <td>289</td>
+      <td>1842.342768</td>
+      <td>517.0</td>
+      <td>2076</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-021</td>
+      <td>Biscuits 200g</td>
+      <td>102</td>
+      <td>1195.013254</td>
+      <td>272.0</td>
+      <td>1368</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-017</td>
+      <td>Mosquito Repellent</td>
+      <td>177</td>
+      <td>2671.407242</td>
+      <td>353.0</td>
+      <td>2856</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-011</td>
+      <td>Dish Wash 500ml</td>
+      <td>397</td>
+      <td>1857.226727</td>
+      <td>399.0</td>
+      <td>1872</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-003</td>
+      <td>Conditioner 200ml</td>
+      <td>210</td>
+      <td>2109.656746</td>
+      <td>246.0</td>
+      <td>2160</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-004</td>
+      <td>Body Wash 250ml</td>
+      <td>92</td>
+      <td>1826.484893</td>
+      <td>713.0</td>
+      <td>2448</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-005</td>
+      <td>Face Wash 100ml</td>
+      <td>368</td>
+      <td>2930.044629</td>
+      <td>763.0</td>
+      <td>3360</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-007</td>
+      <td>Sunscreen 50g</td>
+      <td>115</td>
+      <td>1067.510445</td>
+      <td>204.0</td>
+      <td>1176</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-008</td>
+      <td>Hair Oil 100ml</td>
+      <td>117</td>
+      <td>1882.729659</td>
+      <td>591.0</td>
+      <td>2376</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-016</td>
+      <td>Air Freshener 300ml</td>
+      <td>0</td>
+      <td>2658.623421</td>
+      <td>1258.0</td>
+      <td>3924</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-010</td>
+      <td>Lip Balm 10g</td>
+      <td>242</td>
+      <td>1639.160083</td>
+      <td>588.0</td>
+      <td>1986</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-040</td>
+      <td>Muesli 500g</td>
+      <td>9</td>
+      <td>2918.742980</td>
+      <td>936.0</td>
+      <td>3852</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-012</td>
+      <td>Floor Cleaner 1L</td>
+      <td>0</td>
+      <td>2239.852852</td>
+      <td>959.0</td>
+      <td>3216</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-013</td>
+      <td>Toilet Cleaner 500ml</td>
+      <td>31</td>
+      <td>2319.955794</td>
+      <td>845.0</td>
+      <td>3168</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-014</td>
+      <td>Glass Cleaner 500ml</td>
+      <td>58</td>
+      <td>1568.718949</td>
+      <td>568.0</td>
+      <td>2082</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-015</td>
+      <td>Fabric Softener 1L</td>
+      <td>233</td>
+      <td>1570.814149</td>
+      <td>491.0</td>
+      <td>1848</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-030</td>
+      <td>Atta 5kg</td>
+      <td>353</td>
+      <td>1210.530173</td>
+      <td>204.0</td>
+      <td>1080</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-023</td>
+      <td>Namkeen 150g</td>
+      <td>260</td>
+      <td>631.933847</td>
+      <td>95.0</td>
+      <td>480</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-006</td>
+      <td>Moisturiser 100g</td>
+      <td>124</td>
+      <td>620.946423</td>
+      <td>82.0</td>
+      <td>588</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-022</td>
+      <td>Chips 50g</td>
+      <td>294</td>
+      <td>1827.207017</td>
+      <td>231.0</td>
+      <td>1776</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-035</td>
+      <td>Vinegar 500ml</td>
+      <td>476</td>
+      <td>956.512023</td>
+      <td>253.0</td>
+      <td>744</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-037</td>
+      <td>Protein Bar 60g</td>
+      <td>422</td>
+      <td>1869.777372</td>
+      <td>408.0</td>
+      <td>1860</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-020</td>
+      <td>Surface Spray 500ml</td>
+      <td>410</td>
+      <td>824.427882</td>
+      <td>116.0</td>
+      <td>540</td>
+      <td>1095</td>
+    </tr>
+    <tr>
+      <td>SKU-039</td>
+      <td>Cornflakes 500g</td>
+      <td>285</td>
+      <td>912.056524</td>
+      <td>123.0</td>
+      <td>768</td>
+      <td>730</td>
+    </tr>
+    <tr>
+      <td>SKU-009</td>
+      <td>Talc Powder 100g</td>
+      <td>216</td>
+      <td>646.150459</td>
+      <td>89.0</td>
+      <td>522</td>
+      <td>1095</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>⚠️ Overstock Alerts</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sku_id</th>
+      <th>product_name</th>
+      <th>available_stock</th>
+      <th>total_forecast_6wk</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<h2>🪔 Diwali 2023 Retrospective — Identified Stockout SKUs</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sku_id</th>
+      <th>product_name</th>
+      <th>category</th>
+      <th>stockout_probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SKU-029</td>
+      <td>Tea 250g</td>
+      <td>packaged_food</td>
+      <td>0.824116</td>
+    </tr>
+    <tr>
+      <td>SKU-032</td>
+      <td>Dal 1kg</td>
+      <td>packaged_food</td>
+      <td>0.820960</td>
+    </tr>
+    <tr>
+      <td>SKU-039</td>
+      <td>Cornflakes 500g</td>
+      <td>packaged_food</td>
+      <td>0.817638</td>
+    </tr>
+    <tr>
+      <td>SKU-038</td>
+      <td>Oats 500g</td>
+      <td>packaged_food</td>
+      <td>0.816981</td>
+    </tr>
+    <tr>
+      <td>SKU-015</td>
+      <td>Fabric Softener 1L</td>
+      <td>household</td>
+      <td>0.815993</td>
+    </tr>
+    <tr>
+      <td>SKU-004</td>
+      <td>Body Wash 250ml</td>
+      <td>personal_care</td>
+      <td>0.809524</td>
+    </tr>
+    <tr>
+      <td>SKU-022</td>
+      <td>Chips 50g</td>
+      <td>packaged_food</td>
+      <td>0.802137</td>
+    </tr>
+    <tr>
+      <td>SKU-001</td>
+      <td>Shampoo 200ml</td>
+      <td>personal_care</td>
+      <td>0.798766</td>
+    </tr>
+    <tr>
+      <td>SKU-027</td>
+      <td>Honey 500g</td>
+      <td>packaged_food</td>
+      <td>0.798117</td>
+    </tr>
+    <tr>
+      <td>SKU-033</td>
+      <td>Cooking Oil 1L</td>
+      <td>packaged_food</td>
+      <td>0.797428</td>
+    </tr>
+    <tr>
+      <td>SKU-026</td>
+      <td>Jam 500g</td>
+      <td>packaged_food</td>
+      <td>0.795501</td>
+    </tr>
+    <tr>
+      <td>SKU-036</td>
+      <td>Soya Sauce 200ml</td>
+      <td>packaged_food</td>
+      <td>0.793734</td>
+    </tr>
+    <tr>
+      <td>SKU-028</td>
+      <td>Coffee 200g</td>
+      <td>packaged_food</td>
+      <td>0.791488</td>
+    </tr>
+    <tr>
+      <td>SKU-018</td>
+      <td>Dishwasher Tabs 20</td>
+      <td>household</td>
+      <td>0.790852</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="color: grey; font-size: 12px;">Auto-generated by Sunrise AI Demand System | Do not reply</p>
+</body></html>
